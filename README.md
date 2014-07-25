@@ -2,7 +2,7 @@
 
 #### The calculation for all public Dutch Holidays
 ---
-**[Download 0.2.10](http://github.com/theroks/dutch-public-holidays/release/dutch-public-holidays.js)** (or **[Minified](http://github.com/theroks/dutch-public-holidays/release/dutch-public-holidays.min.js)**) **|**
+**[Download 0.1.0](http://github.com/theroks/dutch-public-holidays/release/dutch-public-holidays.js)** (or **[Minified](http://github.com/theroks/dutch-public-holidays/release/dutch-public-holidays.min.js)**) **|**
 
 ---
 
