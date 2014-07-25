@@ -1,0 +1,22 @@
+{
+    "name": "dutch-public-holidays",
+    "version": "0.1.0",
+    "main": "./release/dutch-public-holidays.js",
+    "dependencies": {
+        "angular": ">= 1.0.8"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "package.json",
+        "lib",
+        "config",
+        "sample",
+        "test",
+        "tests",
+        "ngdoc_assets",
+        "Gruntfile.js",
+        "files.js"
+    ]
+}

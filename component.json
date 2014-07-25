@@ -1,0 +1,15 @@
+{
+    "name": "dutch-public-holidays",
+    "version": "0.1.0",
+    "description": "Calculation for Dutch Pulic Holidays",
+    "keywords": [
+        "angular",
+        "holiday"
+    ],
+    "main": "release/dutch-public-holidays.min.js",
+    "scripts": [
+        "release/dutch-public-holidays.min.js"
+    ],
+    "license": "MIT",
+    "repo": "theroks/dutch-public-holidays"
+}
