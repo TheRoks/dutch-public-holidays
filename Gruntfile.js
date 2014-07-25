@@ -109,7 +109,6 @@ module.exports = function (grunt) {
                 dest: 'site',
                 html5Mode: false,
                 title: 'Dutch Public Holidays',
-                startPage: '/api/ui.router',
                 navTemplate: 'ngdoc_assets/docnav.html'
             },
             api: {
