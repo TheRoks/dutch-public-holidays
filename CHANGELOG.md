@@ -3,4 +3,9 @@
 
 #### Initial Release
 
-* Calculate dutch holidays, including, New Years day, Eater, Pentacot, Ascension, Kingsday, Christmas
+* Calculate dutch holidays, including:
+  * New Years day
+  * Eater, Pentacot
+  * Ascension
+  * Kingsday
+  * Christmas
