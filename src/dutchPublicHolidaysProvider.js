@@ -257,6 +257,20 @@ angular.module('dutchPublicHolidays').provider('dutchPublicHolidays', function (
             return 0;
         };
 
+	    /**
+	     * @ngdoc function
+	     * @name dutchPublicHolidays.dutchPublicHolidays#getHolidays
+	     * @methodOf dutchPublicHolidays.dutchPublicHolidays
+	     *
+	     * @description
+	     * Determines for the given year all Dutch public holidays
+	     * <pre>
+	     * dutchPublicHolidays.getHolidays(year)
+	     * </pre>
+	     *
+	     * @param {year} year of calculation
+	     * @return {Object|Array} Objects with name and date of public holidays
+	     */
         this.getHolidays = function (year) {
             var holidays = [];
             if (validateYear(year)) {
@@ -273,6 +287,20 @@ angular.module('dutchPublicHolidays').provider('dutchPublicHolidays', function (
             return holidays;
         };
 
+	    /**
+	     * @ngdoc function
+	     * @name dutchPublicHolidays.dutchPublicHolidays#isHoliday
+	     * @methodOf dutchPublicHolidays.dutchPublicHolidays
+	     *
+	     * @description
+	     * Determines if the given date is a Dutch public holiday, or not
+	     * <pre>
+	     * dutchPublicHolidays.isHoliday(date)
+	     * </pre>
+	     *
+	     * @param {date} date of calculation
+	     * @return {boolean} Returns true if the date is a public holiday
+	     */
         this.isHoliday = function (date) {
             var year = date.getFullYear();
             var holidays = this.getHolidays(year);
@@ -286,20 +314,76 @@ angular.module('dutchPublicHolidays').provider('dutchPublicHolidays', function (
         };
     }
 
-    // Public API for configuration
+	/**
+	 * @ngdoc function
+	 * @name dutchPublicHolidays.dutchPublicHolidays#includeLiberationDay
+	 * @methodOf dutchPublicHolidays.dutchPublicHolidays
+	 *
+	 * @description
+	 * Defines whether liberation day should be included in the public holidays, or not.
+	 *
+	 * @example
+	 * <pre>
+	 * angular.module('app', ['dutchPublicHolidays']);
+	 *   .run(function(dutchPublicHolidays) {
+       *     dutchPublicHolidays.includeLiberationDay();
+       * });
+	 * </pre>
+	 */
     this.includeLiberationDay = function () {
         includeLiberationDay = true;
     };
 
+	/**
+	 * @ngdoc function
+	 * @name dutchPublicHolidays.dutchPublicHolidays#includeLiberationDayOnLustrum
+	 * @methodOf dutchPublicHolidays.dutchPublicHolidays
+	 *
+	 * @description
+	 * Defines whether liberation day when it's a lustrum should be included in the public holidays, or not.
+	 *
+	 * @example
+	 * <pre>
+	 * angular.module('app', ['dutchPublicHolidays']);
+	 *   .run(function(dutchPublicHolidays) {
+       *     dutchPublicHolidays.includeLiberationDayOnLustrum();
+       * });
+	 * </pre>
+	 */
     this.includeLiberationDayOnLustrum = function () {
         includeLiberationDayOnLustrum = true;
     };
 
+	/**
+	 * @ngdoc function
+	 * @name dutchPublicHolidays.dutchPublicHolidays#includeGoodFriday
+	 * @methodOf dutchPublicHolidays.dutchPublicHolidays
+	 *
+	 * @description
+	 * Defines whether good friday should be included in the public holidays, or not.
+	 *
+	 * @example
+	 * <pre>
+	 * angular.module('app', ['dutchPublicHolidays']);
+	 *   .run(function(dutchPublicHolidays) {
+       *     dutchPublicHolidays.includeGoodFriday();
+       * });
+	 * </pre>
+	 */
     this.includeGoodFriday = function () {
         includeGoodFriday = true;
     };
 
-    // Method for instantiating
+	/**
+	 * @ngdoc object
+	 * @name dutchPublicHolidays.dutchPublicHolidays
+	 	 *
+	 *
+	 * @description
+	 * `dutchPublicHolidays` service is responsible for representing states as well as transitioning
+	 * between them. It also provides interfaces to ask for current state or even states
+	 * you're coming from.
+	 */
     this.$get = function () {
         return new DutchHolidaysService();
     };
