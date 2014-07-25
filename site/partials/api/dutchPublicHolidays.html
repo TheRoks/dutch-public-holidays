@@ -1,0 +1,28 @@
+<h1><code ng:non-bindable=""></code>
+<div><span class="hint"></span>
+</div>
+</h1>
+<div><div class="dutchpublicholidays-page"><h2 id="dutchpublicholidays">dutchPublicHolidays</h2>
+<h3 id="dutchpublicholidays_the-main-module-for-dutchpublicholidays">The main module for dutchPublicHolidays</h3>
+<p>There are several sub-modules included with the dutchPublicHolidays module, however only this module is needed
+as a dependency within your angular app. The other modules are for organization purposes.</p>
+<p>The modules are:
+* dutchPublicHolidays - the main &quot;umbrella&quot; module</p>
+<p><em>You&#39;ll need to include <strong>only</strong> this module as the dependency within your angular app.</em></p>
+<pre class="prettyprint linenums">
+&lt;!doctype html&gt;
+&lt;html ng-app="myApp"&gt;
+&lt;head&gt;
+  &lt;script src="js/angular.js"&gt;&lt;/script&gt;
+  &lt;!-- Include the dutch-public-holidays script --&gt;
+  &lt;script src="js/dutch-public-holidays.min.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+    // ...and add 'dutchPublicHolidays' as a dependency
+    var myApp = angular.module('myApp', ['dutchPublicHolidays']);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div></div>

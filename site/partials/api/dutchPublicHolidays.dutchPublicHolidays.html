@@ -1,0 +1,68 @@
+<h1><code ng:non-bindable="">dutchPublicHolidays</code>
+<div><span class="hint">service in module <code ng:non-bindable="">dutchPublicHolidays</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="dutchpublicholidays-dutchpublicholidays-page"><p><code>dutchPublicHolidays</code> service is responsible for representing states as well as transitioning
+between them. It also provides interfaces to ask for current state or even states
+you&#39;re coming from.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_getholidays">getHolidays(year)</h3>
+<div class="getholidays"><div class="dutchpublicholidays-dutchpublicholidays-getholidays-page"><p>Determines for the given year all Dutch public holidays
+<pre class="prettyprint linenums">
+dutchPublicHolidays.getHolidays(year)
+</pre>
+</div><h5 id="methods_getholidays_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>year</td><td><a href="" class="label type-hint type-hint-year">year</a></td><td><div class="dutchpublicholidays-dutchpublicholidays-getholidays-page"><p>of calculation</p>
+</div></td></tr></tbody></table><h5 id="methods_getholidays_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object|Array</a></td><td><div class="dutchpublicholidays-dutchpublicholidays-getholidays-page"><p>Objects with name and date of public holidays</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_includegoodfriday">includeGoodFriday()</h3>
+<div class="includegoodfriday"><div class="dutchpublicholidays-dutchpublicholidays-includegoodfriday-page"><p>Defines whether good friday should be included in the public holidays, or not.</p>
+</div><h4 id="methods_includegoodfriday_example">Example</h4>
+<div class="example"><div class="dutchpublicholidays-dutchpublicholidays-includegoodfriday-page"><pre class="prettyprint linenums">
+angular.module('app', ['dutchPublicHolidays']);
+  .run(function(dutchPublicHolidays) {
+    dutchPublicHolidays.includeGoodFriday();
+});
+</pre>
+</div></div>
+</div>
+</li>
+<li><h3 id="methods_includeliberationday">includeLiberationDay()</h3>
+<div class="includeliberationday"><div class="dutchpublicholidays-dutchpublicholidays-includeliberationday-page"><p>Defines whether liberation day should be included in the public holidays, or not.</p>
+</div><h4 id="methods_includeliberationday_example">Example</h4>
+<div class="example"><div class="dutchpublicholidays-dutchpublicholidays-includeliberationday-page"><pre class="prettyprint linenums">
+angular.module('app', ['dutchPublicHolidays']);
+  .run(function(dutchPublicHolidays) {
+    dutchPublicHolidays.includeLiberationDay();
+});
+</pre>
+</div></div>
+</div>
+</li>
+<li><h3 id="methods_includeliberationdayonlustrum">includeLiberationDayOnLustrum()</h3>
+<div class="includeliberationdayonlustrum"><div class="dutchpublicholidays-dutchpublicholidays-includeliberationdayonlustrum-page"><p>Defines whether liberation day when it&#39;s a lustrum should be included in the public holidays, or not.</p>
+</div><h4 id="methods_includeliberationdayonlustrum_example">Example</h4>
+<div class="example"><div class="dutchpublicholidays-dutchpublicholidays-includeliberationdayonlustrum-page"><pre class="prettyprint linenums">
+angular.module('app', ['dutchPublicHolidays']);
+  .run(function(dutchPublicHolidays) {
+    dutchPublicHolidays.includeLiberationDayOnLustrum();
+});
+</pre>
+</div></div>
+</div>
+</li>
+<li><h3 id="methods_isholiday">isHoliday(date)</h3>
+<div class="isholiday"><div class="dutchpublicholidays-dutchpublicholidays-isholiday-page"><p>Determines if the given date is a Dutch public holiday, or not
+<pre class="prettyprint linenums">
+dutchPublicHolidays.isHoliday(date)
+</pre>
+</div><h5 id="methods_isholiday_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>date</td><td><a href="" class="label type-hint type-hint-date">date</a></td><td><div class="dutchpublicholidays-dutchpublicholidays-isholiday-page"><p>of calculation</p>
+</div></td></tr></tbody></table><h5 id="methods_isholiday_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="dutchpublicholidays-dutchpublicholidays-isholiday-page"><p>Returns true if the date is a public holiday</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>
